@@ -1,0 +1,16 @@
+<package>
+    <description brief="Bagel">
+      Bagel is a graph based programming language.
+  </description>
+  <author>malte.langosz@dfki.de</author>
+  <maintainer>malte.langosz@dfki.de</maintainer>
+  <keywords>
+    <keyword>control</keyword>
+    <keyword>modeling</keyword>
+    <keyword>language</keyword>
+    <keyword>simulation</keyword>
+  </keywords>
+  <stage>0</stage>
+  <depend package="bagel/c_bagel" />
+  <depend package="bagel/bagel_gui" />
+</package>
