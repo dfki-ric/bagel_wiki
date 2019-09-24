@@ -13,7 +13,7 @@ logicalCpuCount=$([ $(uname) = 'Darwin' ] &&
                            lscpu -p | egrep -v '^#' | wc -l)
 echo "autoprojEnv: false" > pybob.yml
 echo "buildOptional: true" > pybob.yml
-echo "buildconfAddress: git@github.com:dfki-ric/bagel-buildconf.git" >> pybob.yml
+echo "buildconfAddress: https://github.com/dfki-ric/bagel_buildconf.git" >> pybob.yml
 echo "buildconfBranch: master" >> pybob.yml
 echo "defBuildType: debug" >> pybob.yml
 echo "devDir: ${DEV_DIR}" >> pybob.yml
