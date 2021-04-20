@@ -22,8 +22,8 @@ echo "pyScriptDir: ${DEV_DIR}/pybob" >> pybob.yml
 echo "rockFlavor: master" >> pybob.yml
 
 ./pybob.py buildconf
+source ../env.sh
+./pybob.py fetch
+./pybob.py install
 cd ..
-source env.sh
-bob fetch
-bob install
 
