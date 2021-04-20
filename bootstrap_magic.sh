@@ -21,4 +21,9 @@ echo "numCores: $logicalCpuCount" >> pybob.yml
 echo "pyScriptDir: ${DEV_DIR}/pybob" >> pybob.yml
 echo "rockFlavor: master" >> pybob.yml
 
-./pybob.py bootstrap
+./pybob.py buildconf
+cd ..
+source env.sh
+bob fetch
+bob install
+
